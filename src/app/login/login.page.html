@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="header-title">
+      <ion-label class="title-text">¡Te Llevo!</ion-label>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-content">
+  <div class="logo-container">
+    <img src="assets/fotoauto.jpeg" alt="Logo de la aplicación" class="app-logo" />
+  </div>
+  
+  <form [formGroup]="credentials">
+    <ion-item>
+      <ion-input
+        type="username"
+        placeholder="Nombre de Usuario"
+        formControlName="username"
+        class="input-field"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        type="email"
+        placeholder="Correo Electrónico"
+        formControlName="email"
+        class="input-field"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        type="password"
+        placeholder="Contraseña"
+        formControlName="password"
+        class="input-field"
+      ></ion-input>
+    </ion-item>
+    
+    <ion-button expand="full" color="primary" class="login-button" (click)="login();">Iniciar Sesión</ion-button>
+
+    <ion-button expand="full" fill="clear" class="register-link" (click)="register();">¿No tienes una cuenta? Regístrate</ion-button>
+
+   
+  </form>
+</ion-content>

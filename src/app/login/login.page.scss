@@ -1,0 +1,58 @@
+/* Estilo global de la página */
+.title-text {
+  font-size: 42px; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+  color: #f4f4f4; /* Color personalizado para destacar */
+}
+
+ion-header {
+    --ion-background-color: #34495e;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    color: #ecf0f1;
+    text-align: center;
+  }
+  
+  .login-content {
+    --ion-background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Estilos para el contenedor del logotipo y el logotipo */
+  .logo-container {
+    text-align: center;
+  }
+  
+  .app-logo {
+    max-width: 500px; /* Ancho máximo de la imagen del logotipo */
+    margin-bottom: 75   px; /* Espaciado inferior del logotipo */
+  }
+  
+  /* Estilos para los campos de entrada */
+  .input-field {
+    font-size: 16px;
+    margin: 10px auto;
+    width: 60%;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  
+  
+  /* Estilos para los botones de inicio de sesión y registro */
+  .login-button {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .register-link {
+    color: #2980b9;
+  }
+  

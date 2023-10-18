@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "soylaotra-e44c6"
+  },
+  "targets": {
+    "soylaotra-e44c6": {
+      "hosting": {
+        "app": [
+          "soylaotra-e44c6"
+        ]
+      }
+    }
+  }
+}
