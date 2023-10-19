@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registrar Vehículo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-input position="floating" label="Marca del Vehículo" formControlName="make" required></ion-input>
+    </ion-item>
+    <div *ngIf="vehicleForm.get('make')?.hasError('required')">
+      Marca del vehículo es requerida.
+    </div>
+    <div *ngIf="vehicleForm.get('make')?.hasError('maxlength')">
+      Máximo 50 caracteres permitidos.
+    </div>
+
+    <ion-item>
+      <ion-input position="floating" label="Modelo del Vehículo" formControlName="model" required></ion-input>
+    </ion-item>
+    <div *ngIf="vehicleForm.get('model')?.hasError('required')">
+      Modelo del vehículo es requerido.
+    </div>
+
+    <ion-item>  
+      <ion-input position="floating" label="Año del Vehículo" type="number" formControlName="year" required></ion-input>
+    </ion-item>
+    <div *ngIf="vehicleForm.get('year')?.hasError('required')">
+      Año del vehículo es requerido.
+    </div>
+    <div *ngIf="vehicleForm.get('year')?.hasError('min')">
+      El año debe ser igual o mayor a 1900.
+    </div>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label>Selecciona una región</ion-label>
+        <ion-select [(ngModel)]="regions">
+          <ion-select-option *ngFor="let region of regions" [value]="region.nombre">{{ region.nombre }}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+
+
+    <ion-button expand="full" (click)="volverAlPrincipal()">Volver al Principal</ion-button>
+    <ion-button expand="full" color="primary" type="submit">Registrar</ion-button>
+
+  </form>
+</ion-content>

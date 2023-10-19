@@ -1,0 +1,46 @@
+/* En tu archivo de estilos CSS */
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #007bff; /* Color de título personalizado */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25%;
+  text-align: center;
+  background-color: #f4f4f4; /* Color de fondo personalizado */
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra personalizada */
+}
+
+.welcome-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333; /* Color de texto personalizado */
+  margin-bottom: 10px;
+}
+
+.description-text {
+  font-size: 16px;
+  color: #666; /* Color de texto personalizado */
+  margin-bottom: 20px;
+}
+
+.login-button {
+  background-color: #007bff; /* Color de fondo del botón personalizado */
+  color: #fff; /* Color de texto del botón personalizado */
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el ratón sobre el botón */
+}

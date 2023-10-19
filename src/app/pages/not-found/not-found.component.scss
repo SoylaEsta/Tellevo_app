@@ -1,0 +1,20 @@
+.error-container {
+    text-align: center;
+    opacity: 0; /* Inicialmente, el contenido estará oculto */
+    transform: translateY(-20px); /* Inicialmente, el contenido estará desplazado hacia arriba */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+  
+    &.loaded {
+      opacity: 1; /* Cuando se agrega la clase "loaded", el contenido se desvanecerá y se desplazará hacia abajo */
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-text, .animated-link {
+    transition: color 0.5s ease; /* Transición de color suave */
+  }
+  
+  .animated-link:hover {
+    color: red; /* Cambia el color al pasar el mouse sobre el enlace */
+  }
+  

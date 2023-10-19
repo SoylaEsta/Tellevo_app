@@ -12,6 +12,7 @@ export const environment = {
     authDomain: 'soylaotra-e44c6.firebaseapp.com',
     messagingSenderId: '6088382484',
   },
+  //apiUrl:"https://dev.mativilla.cl/duoc/location/"
   production: false
 };
 

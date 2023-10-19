@@ -1,0 +1,94 @@
+/* Estilo global de la página */
+.title-text {
+  font-size: 42px;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+ion-header {
+  --ion-background-color: #34495e;
+}
+
+.header-title {
+  font-size: 24px;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.login-content {
+  --ion-background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Estilos para el contenedor del logotipo y el logotipo */
+.logo-container {
+  text-align: center;
+  margin: 20px 0; /* Espacio superior e inferior del contenedor */
+}
+
+.app-logo {
+  max-width: 350px; /* Ancho máximo del logotipo */
+  height: auto; /* Altura automática */
+  border-radius: 50%; /* Forma circular */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los campos de entrada */
+.input-item {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 80%; /* Ancho máximo del campo de entrada */
+  max-width: 300px; /* Ancho máximo personalizado */
+  margin: 5px auto; /* Centrar horizontalmente */
+}
+
+.input-field {
+  font-size: 16px;
+  width: 100%; /* Ancho completo */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+/* Estilos para los botones de inicio de sesión y registro */
+.login-button {
+  margin-top: 10px; /* Espacio superior */
+  font-weight: bold;
+}
+
+.register-link {
+  color: #2980b9;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title-text {
+  font-size: 64px;
+  font-weight: bold;
+  color: #f4f4f4;
+  animation: blink 2s infinite; /* Aquí 2s es la duración de un ciclo de parpadeo, ajusta según lo necesites */
+}
